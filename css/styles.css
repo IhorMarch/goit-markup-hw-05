@@ -379,9 +379,7 @@ justify-content: center;
     fill:var(--subtle-Text);
     transition: fill var(--transition);
  }              
- /* .client-icon:hover,
- .client-icon:focus{
-    fill: var(--hover);} */
+
  
 .client-link:hover .client-icon,
 .client-link:focus .client-icon
@@ -446,7 +444,7 @@ width: 264px;}
 }
         .modal {
             width: 408px;
-                height: 576px;
+                min-height: 576px;
                 position: absolute;
                 left: 50%;
                 top: 50%;
@@ -471,7 +469,7 @@ width: 264px;}
         border: 1px solid rgba(0, 0, 0, 0.1);
         border-radius: 50%;
         cursor: pointer;
-        transform: backgroun var(--transition);
+        transition: background var(--transition);
       
 }
 .modal-btn:hover ,
@@ -479,7 +477,7 @@ width: 264px;}
    background: var(--hover); 
 }
 .close-modal-icon {
-    transform: fill var(--transition);
+    transition: fill var(--transition);
 }
 .modal-btn:hover .close-modal-icon,
 .modal-btn:focus .close-modal-icon {
